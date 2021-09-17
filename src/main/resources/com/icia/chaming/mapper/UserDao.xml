@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.icia.chaming.dao.UserDao">
+
+<resultMap type="com.icia.chaming.model.User" id="userResultMap">
+	<id column="USER_ID" property="userId" />
+	<result column="USER_CLASS" property="userClass" />
+	<result column="AREA_NUM" property="areaNum" />
+	<result column="SUBAREA_NUM" property="subAreaNum" />
+	<result column="USER_PWD" property="userPwd" />
+	<result column="USER_NAME" property="userName" />
+	<result column="USER_EMAIL" property="userEmail" />
+	<result column="USER_GENDER" property="userGender" />
+	<result column="STATUS" property="status" />
+	<result column="REG_DATE" property="regDate" />
+	<result column="AREA_NAME" property="areaName" />
+	<result column="SUBAREA_NAME" property="subAreaName" />
+	<result column="USER_BIRTH" property="userBirth" />
+	<result column="USER_COMPANY" property="userCompany" />
+	<result column="USER_SCHOOL" property="userSchool" />
+	<result column="USER_LIFE" property="usrLife" />
+	<result column="CHAT_COMMENT" property="chatComment" />
+	<result column="CHAT_USER" property="chatUser" />
+	<result column="CHAT_DATE" property="chatDate" />
+	<result column="USER_PROFILE" property="userProfile" />
+	<result column="USER_ADDR" property="userAddr" />
+		
+</resultMap>
+
+<!-- 로그인 조회 -->
+<select id="userSelect" parameterType="string" resultMap="userResultMap">
+SELECT
+    USER_ID,
+    NVL(USER_CLASS, '') AS USER_CLASS,
+    NVL(AREA_NUM, '') AS AREA_NUM,
+    NVL(SUBAREA_NUM, '') AS SUBAREA_NUM,
+    NVL(USER_PWD, '') AS USER_PWD,
+    NVL(USER_NAME, '') AS USER_NAME,
+    NVL(USER_EMAIL, '') AS USER_EMAIL,
+    NVL(USER_GENDER, '') AS USER_GENDER, 
+    NVL(STATUS, '') AS STATUS,
+    NVL(TO_CHAR(REG_DATE, 'YYYY.MM.DD HH24:MI:SS'), '') AS REG_DATE,
+    NVL(USER_BIRTH, '') AS USER_BIRTH
+    NVL(USER_COMPANY, '') AS USER_COMPANY
+    NVL( USER_SCHOOL, '') AS USER_SCHOOL
+    NVL(USER_LIFE, '') AS USER_LIFE
+    NVL(CHAT_COMMENT, '') AS CHAT_COMMENT
+    NVL(CHAT_USER, '') AS CHAT_USER
+    NVL(CHAT_DATE, '') AS CHAT_DATE
+    NVL(USER_PROFILE, '') AS USER_PROFILE
+    NVL(USER_ADDR, '') AS USER_ADDR
+FROM
+    TBL_USER
+WHERE
+    USER_ID = #{value}
+</select>
+
+<!-- 지역조회(마이페이지에담을부분) -->
+<select id="userAreaSelect" parameterType="string" resultMap="userResultMap">
+SELECT
+    B.AREA_NAME,
+    C.SUBAREA_NAME
+FROM
+    TBL_USER A, AREA B, SUBAREA C
+WHERE
+	A.USER_ID = #{value}
+	AND
+    A.AREA_NUM = B.AREA_NUM
+    AND
+    A.SUBAREA_NUM = C.SUBAREA_NUM
+</select>
+
+
+<insert id="userInsert" parameterType="com.icia.chaming.model.User">
+
+INSERT INTO TBL_USER (
+    USER_ID,
+	USER_CLASS,
+	AREA_NUM,
+	SUBAREA_NUM,
+	USER_PWD,
+	USER_NAME,
+	USER_EMAIL,
+	USER_GENDER,
+	STATUS,
+	REG_DATE,
+	TOTAL_POINT
+) VALUES (
+    #{userId},
+    #{userClass},
+    #{areaNum},
+    #{subAreaNum},
+    #{userPwd},
+    #{userName},
+    #{userEmail},
+    #{userGender},
+    #{status},
+    SYSDATE,
+    #{totalPoint}
+)
+
+</insert>
+
+<update id="userUpdate" parameterType="com.icia.chaming.model.User">
+UPDATE TBL_USER
+SET
+    USER_PWD = #{userPwd},
+    USER_NAME = #{userName},
+    USER_EMAIL = #{userEmail},
+    AREA_NUM = #{areaNum},
+    SUBAREA_NUM = #{subAreaNum},
+WHERE
+	USER_ID = #{userId}
+</update>
+
+
+</mapper>
