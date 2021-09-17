@@ -4,195 +4,258 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<%@ include file="/WEB-INF/views/include/head.jsp" %>
-<%@ include file="/WEB-INF/views/include/navigation.jsp" %>
 
+    <link href="/resources/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/main.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/resources/images/favicon.png">
+    <link rel="instagram-icon" href="/resources/images/favicon.png">
 
 </head>
-<body>
+
 
 
 <body class="h-100">
 
-
-        <!--**********************************
-            Content body start
-        ***********************************-->
-        <div class="content-body">
-
-            <div class="row page-titles mx-0">
-                <div class="col p-md-0">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
-                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li>
-                    </ol>
-                </div>
-            </div>
-            <!-- row -->
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4 col-xl-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="media align-items-center mb-4">
-                                    <img class="mr-3" src="images/avatar/11.png" width="80" height="80" alt="">
-                                    <div class="media-body">
-                                        <h3 class="mb-0">Pikamy Cha</h3>
-                                        <p class="text-muted mb-0">Canada</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="row mb-5">
-                                    <div class="col">
-                                        <div class="card card-profile text-center">
-                                            <span class="mb-1 text-primary"><i class="icon-people"></i></span>
-                                            <h3 class="mb-0">263</h3>
-                                            <p class="text-muted px-4">Following</p>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card card-profile text-center">
-                                            <span class="mb-1 text-warning"><i class="icon-user-follow"></i></span>
-                                            <h3 class="mb-0">263</h3>
-                                            <p class="text-muted">Followers</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        <button class="btn btn-danger px-5">Follow Now</button>
-                                    </div>
-                                </div>
-
-                                <h4>About Me</h4>
-                                <p class="text-muted">Hi, I'm Pikamy, has been the industry standard dummy text ever since the 1500s.</p>
-                                <ul class="card-profile__info">
-                                    <li class="mb-1"><strong class="text-dark mr-4">Mobile</strong> <span>01793931609</span></li>
-                                    <li><strong class="text-dark mr-4">Email</strong> <span>name@domain.com</span></li>
-                                </ul>
-                            </div>
-                        </div>  
-                    </div>
-                    <div class="col-lg-8 col-xl-9">
-                        <div class="card">
-                            <div class="card-body">
-                                <form action="#" class="form-profile">
-                                    <div class="form-group">
-                                        <textarea class="form-control" name="textarea" id="textarea" cols="30" rows="2" placeholder="Post a new message"></textarea>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <ul class="mb-0 form-profile__icons">
-                                            <li class="d-inline-block">
-                                                <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-user"></i></button>
-                                            </li>
-                                            <li class="d-inline-block">
-                                                <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-paper-plane"></i></button>
-                                            </li>
-                                            <li class="d-inline-block">
-                                                <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-camera"></i></button>
-                                            </li>
-                                            <li class="d-inline-block">
-                                                <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-smile"></i></button>
-                                            </li>
-                                        </ul>
-                                        <button class="btn btn-primary px-3 ml-4">Send</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="media media-reply">
-                                    <img class="mr-3 circle-rounded" src="images/avatar/2.jpg" width="50" height="50" alt="Generic placeholder image">
-                                    <div class="media-body">
-                                        <div class="d-sm-flex justify-content-between mb-2">
-                                            <h5 class="mb-sm-0">Milan Gbah <small class="text-muted ml-3">about 3 days ago</small></h5>
-                                            <div class="media-reply__link">
-                                                <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-thumbs-up"></i></button>
-                                                <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-thumbs-down"></i></button>
-                                                <button class="btn btn-transparent text-dark font-weight-bold p-0 ml-2">Reply</button>
-                                            </div>
-                                        </div>
-                                        
-                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                                        <ul>
-                                            <li class="d-inline-block"><img class="rounded" width="60" height="60" src="images/blog/2.jpg" alt=""></li>
-                                            <li class="d-inline-block"><img class="rounded" width="60" height="60" src="images/blog/3.jpg" alt=""></li>
-                                            <li class="d-inline-block"><img class="rounded" width="60" height="60" src="images/blog/4.jpg" alt=""></li>
-                                            <li class="d-inline-block"><img class="rounded" width="60" height="60" src="images/blog/1.jpg" alt=""></li>
-                                        </ul>
-
-                                        <div class="media mt-3">
-                                        <img class="mr-3 circle-rounded circle-rounded" src="images/avatar/4.jpg" width="50" height="50" alt="Generic placeholder image">
-                                        <div class="media-body">
-                                            <div class="d-sm-flex justify-content-between mb-2">
-                                                <h5 class="mb-sm-0">Milan Gbah <small class="text-muted ml-3">about 3 days ago</small></h5>
-                                                <div class="media-reply__link">
-                                                    <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-thumbs-up"></i></button>
-                                                    <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-thumbs-down"></i></button>
-                                                    <button class="btn btn-transparent p-0 ml-3 font-weight-bold">Reply</button>
-                                                </div>
-                                            </div>
-                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="media media-reply">
-                                <img class="mr-3 circle-rounded" src="images/avatar/2.jpg" width="50" height="50" alt="Generic placeholder image">
-                                <div class="media-body">
-                                    <div class="d-sm-flex justify-content-between mb-2">
-                                        <h5 class="mb-sm-0">Milan Gbah <small class="text-muted ml-3">about 3 days ago</small></h5>
-                                        <div class="media-reply__link">
-                                            <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-thumbs-up"></i></button>
-                                            <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-thumbs-down"></i></button>
-                                            <button class="btn btn-transparent p-0 ml-3 font-weight-bold">Reply</button>
-                                        </div>
-                                    </div>
-                                    
-                                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                                </div>
-                            </div>
-
-                            <div class="media media-reply">
-                                <img class="mr-3 circle-rounded" src="images/avatar/2.jpg" width="50" height="50" alt="Generic placeholder image">
-                                <div class="media-body">
-                                    <div class="d-sm-flex justify-content-between mb-2">
-                                        <h5 class="mb-sm-0">Milan Gbah <small class="text-muted ml-3">about 3 days ago</small></h5>
-                                        <div class="media-reply__link">
-                                            <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-thumbs-up"></i></button>
-                                            <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-thumbs-down"></i></button>
-                                            <button class="btn btn-transparent p-0 ml-3 font-weight-bold">Reply</button>
-                                        </div>
-                                    </div>
-                                    
-                                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- #/ container -->
+    <!-- navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="nav-1">
+            <!-- <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png" alt="logo_img">
+            <div class="vl"></div> -->
+            <img class="logo_instagram_txt" src="/resources/images/logo_text.png" alt="logo_text">
         </div>
+        <input id="searchInput" type="search" class="input-search" placeholder="검색">
+        <div class="nav-2">
+           <a href="/newsfeed"><img src="/resources/images/home.png" alt="홈"></a>
+          <a href="/chatting"><img src="/resources/images/dm.png" alt="DM"></a>
+          <a href="/newsfeed"><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="탐색"></a>
+          <a href="/newsfeed"><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트"></a>
+          <a href="/myPage"><img src="/resources/images/mypage.png" alt="DM"></a>
+        </div>
+      </div>
+    </nav>
+    <!-- main -->
+    <main>
+      <div class="feeds">
+        <!-- article -->
+        <article>
+          <header>
+            <div class="profile-of-article">
+              <img class="img-profile pic" src="/resources/images/logo_text.png" alt="dlwlrma님의 프로필 사진" width="300" height="300">
+              <span class="userID main-id point-span">dlwlrma</span>
+            </div>
+            <img class="icon-react icon-more" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="more">
+          </header>
+          <div class="main-image">
+            <img src="/resources/images/logo_text.png" alt="dlwlrma님의 피드 사진" class="mainPic">
+          </div>
+          <div class="icons-react">
+            <div class="icons-left">
+              <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
+              <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="말풍선">
+              <img class="icon-react" src="/resources/images/dm.png" alt="DM">  
+            </div>
+            <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt="북마크">
+          </div>
+          <!-- article text data -->
+          <div class="reaction">
+            <div class="liked-people">
+              <img class="pic" src="/resources/images/logo_text.png" alt="johnnyjsuh님의 프로필 사진">
+              <p><span class="point-span">johnnyjsuh</span>님 <span class="point-span">외 2,412,751명</span>이 좋아합니다</p>
+            </div>
+            <div class="description">
+              <p><span class="point-span userID">dlwlrma</span><span class="at-tag">@wkorea @gucci</span> 🌱</p>
+            </div>
+            <div class="comment-section">
+              <ul class="comments">
+                <li>
+                  <span><span class="point-span userID">postmalone</span>내가 입으면 더 잘어울릴 것 같아</span>
+                  <div>
+                    <img class="comment-more" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="more">
+                    <div class="comment-like">
+                      <img class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
+                      <img class="comment-heart-liked" src="/resources/images/liked.png" alt="좋아요된하트">
+                    </div>
+                  </div>
+                </li>
+                <!-- input 값 여기에 추가 -->
+              </ul>
+              <div class="time-log">
+                <span>32분 전</span>
+              </div>
+            </div>
+          </div>
+          <div class="hl"></div>
+          <div class="comment">
+            <input id="input-comment" class="input-comment" type="text" placeholder="댓글 달기..." >
+            <button type="submit" class="submit-comment" disabled>게시</button>
+          </div>
+        </article>
+        <article>
+          <header>
+            <div class="profile-of-article">
+              <img class="img-profile pic" src="/resources/images/logo_text.png" alt="thisisyourhyung님의 프로필 사진">
+              <span class="userID main-id point-span">thisisyourhyung</span>
+            </div>
+            <img class="icon-react icon-more" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="more">
+          </header>
+          <div class="main-image">
+            <img src="/resources/images/logo_text.png" alt="thisisyourhyung님의 피드 사진" class="mainPic">
+          </div>
+          <div class="icons-react">
+            <div class="icons-left">
+              <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
+              <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="말풍선">
+              <img class="icon-react" src="/resources/images/dm.png" alt="DM">  
+            </div>
+            <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt="북마크">
+          </div>
+          <!-- article text data -->
+          <div class="reaction">
+            <div class="liked-people">
+              <img class="pic" src="/resources/images/logo_text.png" alt="_jeongjaehyun님의 프로필 사진">
+              <p><span class="point-span">_jeongjaehyun</span>님 <span class="point-span">외 4,612,203명</span>이 좋아합니다</p>
+            </div>
+            <div class="description">
+              <p><span class="point-span userID">thisisyourhyung</span>코로나 언제 사라지나 ㅠㅠ 여행 가고 싶다~~</p>
+            </div>
+            <div class="comment-section">
+              <ul class="comments">
+                <li>
+                  <span><span class="point-span userID">williamhammington</span>나도 호주 가고 싶다!</span>
+                  <div>
+                    <img class="comment-more" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="more">
+                    <div class="comment-like">
+                      <img class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
+                      <img class="comment-heart-liked" src="img/liked.png" alt="좋아요된하트">
+                    </div>
+                  </div>
+                </li>
+                <!-- input 값 여기에 추가 -->
+              </ul>
+              <div class="time-log">
+                <span>1시간 전</span>
+              </div>
+            </div>
+          </div>
+          <div class="hl"></div>
+          <div class="comment">
+            <input id="input-comment2" class="input-comment" type="text" placeholder="댓글 달기..." >
+            <button type="submit" class="submit-comment" disabled>게시</button>
+          </div>
+        </article>
+
+      </div>
+      <!-- main-right -->
+      <div class="main-right">
+        <div class="myProfile">
+          <img class="pic" src="/resources/images/logo_text.png" alt="thisisyourhyung님의 프로필 사진">
+          <div>
+            <span class="userID point-span">thisisyourhyung</span>
+            <span class="sub-span">JIHYUNG LEE</span>  
+          </div>
+        </div>
+        <!-- story section -->
+        <div class="section-story">
+          <div class="menu-title">
+            <span class="sub-title">스토리</span>
+            <span class="find-more">모두 보기</span>
+          </div>
+          <ul class="story-list">
+            <li>
+              <div class="gradient-wrap">
+                <img class="img-profile story" src="/resources/images/logo_text.png" alt="wecode_bootcamp님의 프로필 사진">
+              </div>
+              <div class="profile-text">
+                <span class="userID point-span">wecode_bootcamp</span>
+                <span class="sub-span">12분 전</span>  
+              </div>
+            </li>
+            <li>
+              <div class="gradient-wrap">
+                <img class="img-profile story" src="/resources/images/logo_text.png" alt="han_ye_seul님의 프로필 사진">
+              </div>
+              <div class="profile-text">
+                <span class="userID point-span">han_ye_seul</span>
+                <span class="sub-span">28분 전</span>  
+              </div>
+            </li>
+            <li>
+              <div class="gradient-wrap">
+                <img class="img-profile story" src="/resources/images/logo_text.png" alt="dntlrdl님의 프로필 사진">
+              </div>
+              <div class="profile-text">
+                <span class="userID point-span">dntlrdl</span>
+                <span class="sub-span">40분 전</span>  
+              </div>
+            </li>
+            <li>
+              <div class="gradient-wrap">
+                <img class="img-profile story" src="/resources/images/logo_text.png" alt="i_icaruswalks님의 프로필 사진">
+              </div>
+              <div class="profile-text">
+                <span class="userID point-span">i_icaruswalks</span>
+                <span class="sub-span">56분 전</span>  
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- recommendation section -->
+        <div class="section-recommend">
+          <div class="menu-title">
+            <span class="sub-title">회원님을 위한 추천</span>
+            <span class="find-more">모두 보기</span>
+          </div>
+          <ul class="recommend-list">
+            <li>
+              <div class="recommend-friend-profile">
+                <img class="img-profile" src="/resources/images/logo_text.png" alt="renebaebae님의 프로필 사진">
+                <div class="profile-text">
+                  <span class="userID point-span">renebaebae</span>
+                  <span class="sub-span">hi_sseulgi님 외 2명이 팔로우합니다</span>
+                </div>
+              </div>
+              <span class="btn-follow">팔로우</span>
+            </li>
+            <li>
+              <div class="recommend-friend-profile">
+                <img class="img-profile" src="/resources/images/logo_text.png" alt="_jeongjaehyun님의 프로필 사진">
+                <div class="profile-text">
+                  <span class="userID point-span">_jeongjaehyun</span>
+                  <span class="sub-span">johnnyjsuh님이 팔로우합니다</span>  
+                </div>
+              </div>
+              <span class="btn-follow">팔로우</span>
+            </li>
+            <li>
+              <div class="recommend-friend-profile">
+                <img class="img-profile" src="/resources/images/logo_text.pngs" alt="leehi_hi님의 프로필 사진">
+                <div class="profile-text">
+                  <span class="userID point-span">leehi_hi</span>
+                  <span class="sub-span">jennierubyjane님 외 5명이 팔로우합...</span>  
+                </div>
+              </div>
+              <span class="btn-follow">팔로우</span>
+            </li>
+          </ul>
+        </div>
+        <footer>
+          <p class="insta-sccript">
+            소개 ∙ 도움말 ∙ 홍보 센터 ∙ API ∙ 채용 정보 ∙ 개인정보처리방침 ∙ <br>약관 ∙ 위치 ∙ 인기계정 ∙ 해시태그 ∙ 언어
+            <br><br>
+            © 2020 INSTAGRAM FROM FACEBOOK
+          </p>
+        </footer>
+      </div>
+    </main>
+    <script src="/resources/js/main.js"></script>
+
         <!--**********************************
             Content body end
         ***********************************-->
         
         
-        <!--**********************************
-            Footer start
-        ***********************************-->
-        <div class="footer">
-            <div class="copyright">
-                <p>Copyright &copy; Designed & Developed by <a href="https://themeforest.net/user/quixlab">Quixlab</a> 2018</p>
-            </div>
-        </div>
-        <!--**********************************
-            Footer end
-        ***********************************-->
+        
     </div>
     <!--**********************************
         Main wrapper end

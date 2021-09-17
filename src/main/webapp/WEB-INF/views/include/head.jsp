@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="/resources/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
     <!-- Custom Stylesheet -->
     <link href="/resources/css/style.css" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width">
+    <link href="/resources/style/common.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/style/main.css" rel="stylesheet" type="text/css" />
+    <!-- favicon -->
+
+  
 
 <!--**********************************
         Scripts

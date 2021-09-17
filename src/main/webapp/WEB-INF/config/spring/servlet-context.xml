@@ -59,12 +59,21 @@
             		<list>
             			<value>/index</value>
             			<value>/login</value>
+            			<value>/user/login</value>
             			<value>/myPage</value>
             			<value>/join</value>
+            			<value>/user/join</value>
             			<value>/newsFeed</value>
             			<value>/chatting</value>
             			<value>/send</value>
             			<value>/detail</value>
+            			<value>/user/login</value>
+            			<value>/user/loginOut</value>           			
+            		<value>/user/regProc</value>
+            			<value>/user/idCheck</value>
+            			<value>/user/findPwd</value>
+            			<value>/user/areaProc</value>
+            			<value>/user/sendMail</value>
             		</list>
             	</constructor-arg>
             </bean>

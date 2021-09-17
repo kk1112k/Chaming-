@@ -37,16 +37,7 @@ public class UserService
 	@Autowired
 	private UserDao userDao;
 	
-	/**
-	 * <pre>
-	 * 메소드명   : userInsert
-	 * 작성일     : 2021. 1. 20.
-	 * 작성자     : daekk
-	 * 설명       : 사용자 등록
-	 * </pre>
-	 * @param user User
-	 * @return int
-	 */
+	
 	public int userInsert(User user)
 	{
 		int count = 0;
@@ -63,16 +54,7 @@ public class UserService
 		return count;
 	}
 	
-	/**
-	 * <pre>
-	 * 메소드명   : userUpdate
-	 * 작성일     : 2021. 1. 20.
-	 * 작성자     : daekk
-	 * 설명       : 사용자 수정
-	 * </pre>
-	 * @param user User
-	 * @return int
-	 */
+	
 	public int userUpdate(User user)
 	{
 		int count = 0;
@@ -89,42 +71,7 @@ public class UserService
 		return count;
 	}
 	
-	/**
-	 * <pre>
-	 * 메소드명   : userStatusUpdate
-	 * 작성일     : 2021. 1. 20.
-	 * 작성자     : daekk
-	 * 설명       : 사용자 상태 수정
-	 * </pre>
-	 * @param user User
-	 * @return int
-	 */
-	public int userStatusUpdate(User user)
-	{
-		int count = 0;
-		
-		try
-		{
-			count = userDao.userStatusUpdate(user);
-		}
-		catch(Exception e)
-		{
-			logger.error("[UserService] userStatusUpdate Exception", e);
-		}
-		
-		return count;
-	}
 	
-	/**
-	 * <pre>
-	 * 메소드명   : userSelect
-	 * 작성일     : 2021. 1. 20.
-	 * 작성자     : daekk
-	 * 설명       : 사용자 조회
-	 * </pre>
-	 * @param userId 사용자 아이디
-	 * @return User
-	 */
 	public User userSelect(String userId)
 	{
 		User user = null;

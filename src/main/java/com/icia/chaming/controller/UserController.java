@@ -73,8 +73,8 @@ public class UserController {
 	}
 	
 	//회원가입 폼
-	@RequestMapping(value="/user/regForm", method=RequestMethod.GET)
-	public String regForm(HttpServletRequest request, HttpServletResponse response)
+	@RequestMapping(value="/user/join", method=RequestMethod.GET)
+	public String join(HttpServletRequest request, HttpServletResponse response)
 	{
 		String cookieUserId = CookieUtil.getHexValue(request, AUTH_COOKIE_NAME);
 		if(!StringUtil.isEmpty(cookieUserId))
@@ -85,7 +85,7 @@ public class UserController {
 		}
 		else
 		{
-			return "/user/regForm";
+			return "/user/join";
 		}
 	}
 	
